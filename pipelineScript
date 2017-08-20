@@ -1,0 +1,4 @@
+node {
+  stage 'Run JMeter Test'
+  sh 'C:\apache-jmeter-3.1\apache-jmeter-3.1\bin\jmeter.bat -Jjmeter.save.saveservice.output_format=xml -n -t C:\apache-jmeter-3.1\apache-jmeter-3.1\bin\CourseQueueTest.jmx -l Test.jtl'
+}
